@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import image from "@/public/images/Group.png";
+import image from "@/public/images/Main logo.png";
 import mail from "@/public/images/mail.png";
 import wallet from "@/public/images/wallet.png";
 import Vector from "@/public/images/Vector.png";

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import coffee from "@/public/images/Group.png"
+import coffee from "@/public/images/Main logo.png"
 import bottom from "@/public/images/Bottom icons.png"
 
 
