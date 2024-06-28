@@ -30,7 +30,7 @@ const Navbar = () => {
               <a className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 dark:focus:bg-gray-600 focus:text-grey-600 hover:text-gray-600 text-gray-800 md:mt-0 md:ml-4 focus:text-gray-900  focus:outline-none " href="#">How it works</a>
               <a className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 dark:focus:bg-gray-600 focus:text-grey-600 hover:text-gray-600 text-gray-800 md:mt-0 md:ml-4 focus:text-gray-900  focus:outline-none " href="#">Creators</a>
               <a className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 dark:focus:bg-gray-600 focus:text-grey-600 hover:text-gray-600 text-gray-800 md:mt-0 md:ml-4 focus:text-gray-900  focus:outline-none " href="#">Community</a>
-              <a className="px-4 py-2 mt-2 text-sm font-semibold  hover:bg-gray-600 dark:focus:bg-gray-600 focus:text-grey-600 hover:text-gray-600 text-white md:mt-0 md:ml-4 focus:text-gray-900  focus:outline-none bg-[#562B0C] rounded-full p-3 " href="#">Get Started</a>
+              <a className="px-4 py-2 mt-2 text-sm font-semibold  hover:bg-gray-600 dark:focus:bg-gray-600 focus:text-grey-600 hover:text-gray-600 text-white md:mt-0 md:ml-4 focus:text-gray-900  focus:outline-none bg-[#562B0C] rounded-full p-3 " href="/dashboard">Get Started</a>
             </nav>
           </div>
         </div>
