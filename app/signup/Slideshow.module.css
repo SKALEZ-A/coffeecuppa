@@ -1,0 +1,47 @@
+.slideshowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .slideshow {
+    width: 100%;
+  }
+  
+  .eachSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust as needed */
+  }
+  
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .mainImage {
+    width: 60%;
+    transition: transform 0.5s ;
+  }
+  
+  .sideImage {
+    width: 20%;
+    transition: transform 0.5s;
+    opacity: 0.7;
+  }
+  
+  .arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  

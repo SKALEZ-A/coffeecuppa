@@ -44,3 +44,44 @@ body {
 .animate-custom-bounce {
   animation: customBounce 4s ease-in-out infinite;
 }
+
+.slideshowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.eachSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust as needed */
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.mainImage {
+  width: 60%; /* Middle image size */
+  transition: transform 0.5s ease;
+}
+
+.sideImage {
+  width: 20%; /* Side images size */
+  transition: transform 0.5s ease;
+  opacity: 0.7;
+}

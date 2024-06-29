@@ -11,7 +11,8 @@ import PageWrapper from '@/components/dash/Page-wrapper';
 import SideNav from '@/components/dash/Side-nav';
 import Page from "./Page_content";
 import Image from 'next/image'
-import 'react-slideshow-image/dist/styles.css'
+import Slideshow from './slide'
+
 
 
 // export const metadata: Metadata = {
@@ -20,6 +21,9 @@ import 'react-slideshow-image/dist/styles.css'
 // };
 
 const page = () => {
+
+
+
 
   return (
     
@@ -33,11 +37,16 @@ const page = () => {
           </div>
           <div className="text-[16px] font-[300] text-white ml-[50px] mt-3">
             Create your account or sign in to get started
-            </div>
+          </div>
+          <div>
+          <Slideshow/>
+          </div>
         </div>
         
       <div className="w-full lg:w-[65%] xl:w-[65%] bg-white lg:rounded-l-[40px] rounded-t-[20px]">
       BBBBBB
+
+      <Slideshow/>
       </div>
       </div>
         </div>
