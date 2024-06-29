@@ -4,7 +4,7 @@ const Page_content = () => {
   return (
     <div>
       <div className="flex gap-10 flex-col">
-        <div className=" w-full h-64 rounded-lg bg-white shadow-lg text-black justify-between p-8">
+        <div className=" w-full h-64 rounded-lg bg-[#1E0D00] shadow-lg text-black justify-between p-8">
           <div className="flex flex-row justify-between items-center border-b">
             <div className="flex flex-row gap-5">
             <span className="h-14 w-14 bg-black rounded-full" />
