@@ -15,10 +15,10 @@
        <Slide
          slidesToShow={1}
          indicators={true}
-         arrows={true}
+         arrows={false}
          easing="ease"
          cssClass={styles.slideshow}
-         transitionDuration={1000}
+         transitionDuration={500}
        >
          {images.map((image, index) => (
            <div className={styles.eachSlide} key={index}>
