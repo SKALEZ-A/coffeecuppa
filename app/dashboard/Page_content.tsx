@@ -1,10 +1,11 @@
 import React from "react";
+import { Icon } from '@iconify/react';
 
 const Page_content = () => {
   return (
     <div>
       <div className="flex gap-10 flex-col">
-        <div className=" w-full h-64 rounded-lg bg-[#1E0D00] shadow-lg text-black justify-between p-8">
+        <div className=" w-full h-64 rounded-xl bg-white shadow-lg text-black justify-between p-8">
           <div className="flex flex-row justify-between items-center border-b">
             <div className="flex flex-row gap-5">
             <span className="h-14 w-14 bg-black rounded-full" />
@@ -14,7 +15,9 @@ const Page_content = () => {
               </div>
             </div>
             <div className="justify-end">
-              <button className=" p-4 rounded-full text-white font-bold text-sm bg-gray-900">Share page..</button>
+              <button className=" flex items-center justify-center gap-3 p-4 rounded-full text-white font-semibold text-sm bg-[#562B0C]">
+              <Icon icon="mi:share" width="24" height="24" />
+                Share page</button>
             </div>
           </div>
           <div className="flex flex-col gap-5 mt-4">
@@ -27,7 +30,7 @@ const Page_content = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full h-64 rounded-lg bg-white shadow-lg p-8 justify-center items-center">
+        <div className=" w-full h-64 rounded-xl bg-white shadow-lg p-8 justify-center items-center">
           <div className=" border border-zinc-200 justify-center items-center w-auto h-auto flex flex-col gap-7 py-7">
             <p className="text-lg">💔</p>
             <p className="font-bold">You don't have any supporters yet.</p>

@@ -5,18 +5,24 @@ import { SideNavItem } from './types';
 export const SIDENAV_ITEMS: SideNavItem[] = [
   {
     title: 'Home',
-    path: '/',
+    path: '/dashboard',
     icon: <Icon icon="lucide:home" width="24" height="24" />,
   },
   {
     title: 'View Page',
-    path: '/',
+    path: '/#',
     icon: <Icon icon="lucide:app-window" width="24" height="24" />,
   },
   {
     title: 'Explore creators',
-    path: '/',
+    path: '/#',
     icon: <Icon icon="mingcute:grid-line" width="24" height="24" />,
+  },
+
+  {
+    title: 'Supporters',
+    path: '/supporters',
+    icon: <Icon icon="mdi:find-love" width="24" height="24" />,
   },
   {
     title: 'Projects',
@@ -31,7 +37,7 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
   },
   {
     title: 'Messages',
-    path: '/messages',
+    path: '/#',
     icon: <Icon icon="lucide:mail" width="24" height="24" />,
   },
   {
@@ -46,7 +52,7 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
   },
   {
     title: 'Help',
-    path: '/help',
+    path: '#',
     icon: <Icon icon="lucide:help-circle" width="24" height="24" />,
   },
 ];

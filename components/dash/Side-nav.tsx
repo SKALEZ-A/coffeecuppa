@@ -48,13 +48,13 @@ const MenuItem = ({ item }: { item: SideNavItem }) => {
         <>
           <button
             onClick={toggleSubMenu}
-            className={`flex flex-row items-center p-2 rounded-lg hover-bg-zinc-100 w-full justify-between hover:bg-zinc-100 ${
+            className={`flex flex-row gap-10 items-center p-2 rounded-lg hover-bg-zinc-100 w-full justify-between hover:bg-zinc-100 ${
               pathname.includes(item.path) ? 'bg-zinc-100' : ''
             }`}
           >
             <div className="flex flex-row space-x-4 items-center">
               {item.icon}
-              <span className=" font-semibold flex">{item.title}</span>
+              <span className=" font-semibold text-sm flex">{item.title}</span>
             </div>
 
             <div className={`${subMenuOpen ? 'rotate-180' : ''} flex`}>
@@ -88,7 +88,7 @@ const MenuItem = ({ item }: { item: SideNavItem }) => {
           }`}
         >
           {item.icon}
-          <span className=" font-normal text-lg flex">{item.title}</span>
+          <span className=" font-normal text-sm flex">{item.title}</span>
         </Link>
       )}
     </div>
