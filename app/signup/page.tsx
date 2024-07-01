@@ -1,21 +1,22 @@
 "use client";
-import { useState } from 'react';
-import Image from 'next/image';
+import { useState } from "react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { supabase } from '../../config';
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Slideshow from './slide';
+import logo from "@/public/images/Main logo.png";
 
-const PageComponent = () => {
+const SignupPage = () => {
   const [username, setUsername] = useState('');
+  const router = useRouter();
 
   const getUsernameData = async (username: string) => {
     try {
       let { data: Creators, error } = await supabase
         .from('Creators')
-        .select(`
-          username
-        `)
+        .select('username')
         .eq('username', username);
 
       if (error) {
@@ -34,21 +35,20 @@ const PageComponent = () => {
       toast.error('Error fetching data');
       return null;
     }
-  }
+  };
 
-  const handleFetchData = () => {
-    getUsernameData(username).then(data => {
-      if (data) {
-        console.log('User Data:', data);
-      }
-    });
-  }
+  const handleFetchData = async () => {
+    const data = await getUsernameData(username);
+    if (data) {
+      router.push(`/upload?username=${username}`);
+    }
+  };
 
   return (
     <div className="flex bg-[#1E0D00] h-screen w-screen">
       <div className="flex flex-wrap justify-between h-full w-full">
         <div className="lg:my-3 w-full lg:w-[40%] xl:w-[40%]">
-          <Image src="/images/logoimage.png" width={203} height={51} alt="Logo" className="mt-[50px] ml-[50px]" />
+          <Image src={logo} width={203} height={51} alt="Logo" className="mt-[50px] ml-[50px]" />
           <div className="ml-[50px] text-white font-[500] text-[30px] mt-[40px] lg:mt-[30px] xl:mt-[50px]">
             Welcome to Coffee Cupa
           </div>
@@ -69,7 +69,7 @@ const PageComponent = () => {
             <p className="text-[#323232] font-[300] text-[15px]">Create a username for your page</p>
             <div className="w-[400px] rounded-[12px] h-[55px] bg-[#F9F9F9] flex items-center my-auto hover:border-[#562B0C] mt-2">
               <div className="flex ml-[20px]">
-                <Image src="/images/user.png" width={20} height={20} alt="Logo" />
+                <Image src="/images/user.png" width={20} height={20} alt="User" />
                 <p className="ml-3 text-black">cofeecupa.com/</p>
                 <input
                   type="text"
@@ -98,4 +98,6 @@ const PageComponent = () => {
   );
 }
 
-export default PageComponent;
+export default SignupPage;
+
+
